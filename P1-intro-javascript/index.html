@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Datos en JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        pre {
+            background: #222;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de Datos en JavaScript</h1>
+    <p>Abre la consola del navegador (<strong>F12 → Consola</strong>) para ver los resultados de los siguientes ejemplos:</p>
+
+    <h2>Ejemplo de Código:</h2>
+    <pre>
+console.log(typeof 42);            // number
+console.log(typeof 'Veinticinco'); // string
+console.log(typeof -666);          // number
+console.log(typeof true);          // boolean
+console.log(typeof 0);             // number
+console.log(typeof '');            // string
+console.log(typeof null);          // object (caso especial en JS)
+console.log(typeof undefined);     // undefined
+console.log(typeof false);         // boolean
+
+// Ejemplos adicionales
+console.log(typeof []);            // object (arreglo)
+console.log(typeof {});            // object (objeto)
+console.log(typeof function(){});  // function
+console.log(typeof NaN);           // number (aunque es "Not-a-Number")
+console.log(typeof Infinity);      // number
+    </pre>
+
+    <script>
+        console.log("🔹 Tipos de Datos en JavaScript:");
+        console.log(typeof 42);            // number
+        console.log(typeof 'Veinticinco'); // string
+        console.log(typeof -666);          // number
+        console.log(typeof true);          // boolean
+        console.log(typeof 0);             // number
+        console.log(typeof '');            // string
+        console.log(typeof null);          // object (caso especial en JS)
+        console.log(typeof undefined);     // undefined
+        console.log(typeof false);         // boolean
+
+        // Ejemplos adicionales
+        console.log(typeof []);            // object (arreglo)
+        console.log(typeof {});            // object (objeto)
+        console.log(typeof function(){});  // function
+        console.log(typeof NaN);           // number (aunque es "Not-a-Number")
+        console.log(typeof Infinity);      // number
+    </script>
+</body>
+</html>
