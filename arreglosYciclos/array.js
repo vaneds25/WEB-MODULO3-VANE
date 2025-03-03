@@ -34,3 +34,24 @@ console.log("Array ordenado alfabeticamente:", colores);
 // 9. Invertir el Array: Invierte el orden de los elementos en el array.    
 colores.reverse();
 console.log("Array invertido:", colores);       
+
+
+
+// otros ejemplos
+//El método push() añade un elemento al final de un array en JavaScript.
+let colorestest = ['rojo', 'verde', 'azul'];
+colorestest.push('amarillo');
+
+
+//En JavaScript, los arrays están indexados desde 0, lo que significa que:
+
+//frutas[0] → 'manzana'
+//frutas[1] → 'fresa'
+//frutas[2] → 'naranja'
+
+console.log(colorestest); 
+// Salida: ['rojo', 'verde', 'azul', 'amarillo']
+
+let frutas = ['manzana', 'fresa', 'naranja'];
+console.log(frutas[2]); 
+// Salida: "naranja"
