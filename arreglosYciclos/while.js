@@ -52,7 +52,4 @@ Número impar: Su residuo al dividirlo entre 2 es 1 → n % 2 !== 0
 
 */
 
-
-
-
 console.log("Fin del programa ejercicio práctico")
