@@ -1,5 +1,5 @@
 const span = document.querySelector("#pass_ge")
-const range = document.querySelector(".controles input")
+const range = document.querySelector("#length")
 const tag = document.querySelectorAll("div")
 
 const letters = "abcdefghijklmnopqrstuvwxyz"

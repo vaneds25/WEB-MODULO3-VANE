@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Password </title>
+    <title>Generador de Contraseñas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <main>
-        <span id="pass_ge">123456</span>
-        <div class="controles">
-            <input type="range" min="4" max="16" />
-            <button onclick="genenPass()">
-                Generar
-            </button>
+    <div class="password-generator">
+        <h2>Generador de Contraseñas</h2>
+        <div class="password-display" id="passwordDisplay">PTx1f5DaFX</div>
+        <div class="options">
+            <label for="length">Longitud de Caracteres: <span id="lengthValue">10</span></label>
+            <input type="range" id="length" min="6" max="20" value="10">
+            <label><input type="checkbox" checked> Incluir Mayúsculas</label>
+            <label><input type="checkbox" checked> Incluir Minúsculas</label>
+            <label><input type="checkbox" checked> Incluir Números</label>
+            <label><input type="checkbox" checked> Incluir Símbolos</label>
         </div>
-    </main>
-    <script src="passwords.js"></script>
-    
+        <div class="strength">
+            <label>Fuerza: <span>MEDIUM</span></label>
+        </div>
+        <button class="generate-button">GENERAR</button>
+    </div>
+
+    <script>
+        const lengthSlider = document.getElementById('length');
+        const lengthValue = document.getElementById('lengthValue');
+
+        lengthSlider.addEventListener('input', () => {
+            lengthValue.textContent = lengthSlider.value;
+        });
+    </script>
 </body>
 </html>
